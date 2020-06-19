@@ -6,9 +6,6 @@ if (!is_file($train_file))
 
 $ann = fann_create_from_file($train_file);
 
-$results = array();
-
-
 if ($ann) {
     
     foreach(range(1, -1, -0.2) as $test_input_value_a){
